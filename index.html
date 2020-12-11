@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="robots" content="noodp, noydir">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;500&display=swap');
+
+:root {
+    --linear-gradient: linear-gradient(to bottom, #B11F8B, #EB7139);
+    --primary-color: #fff;
+    --secondary-color: rgba(0,0,0, .8);
+    --thirthly-color: #FBB31F;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.52;
+    background: var(--linear-gradient) no-repeat 0 0;
+    background-size: cover;
+    // overflow: hidden;
+    &.hidden {
+        overflow-y: hidden;
+    }
+}
+.gallery-title{
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+	font-weight:bolder;
+    margin-bottom: 70px;
+	}
+.filter-button{
+    font-size: 18px;
+    border: 2px solid #crimson;
+	padding:5px 10px;
+    text-align: center;
+    color: #111;
+    margin-bottom: 30px;
+	border-radius: 5px;
+	background:crimson;
+}
+.filter-button:hover,
+.filter-button:focus,
+.filter-button.active{
+    color: #fff;
+    background-color:#111;
+	outline:none;
+}
+.row photos{
+left: 2px;
+
+}
+footer {
+	
+	color: #fff;
+	text-align: center;
+}
+
+footer span a{
+	color: #111;
+	text-decoration: none;
+}
+
+footer span a:hover {
+	text-decoration: underline;
+}
+
+</style>
+<body>
+	
+	<div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<h1 class="gallery-title">Gallery</h1>
+			</div>
+
+			<div align="center">
+				<button class="filter-button" data-filter="category1">UI/UX</button>
+				<button class="filter-button" data-filter="category2">Design</button>
+				
+			</div>
+			
+			<br/>
+			
+		
+		 <div class="row photos">
+		 
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/lake.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/lake.jpg"></a></div>
+	
+				<div class="col-sm-6 col-md-4 col-lg-3 item" ><a href="images/photo-15.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/photo-15.jpg"></a></div>
+	
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/photo-15.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/photo-15.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/photo-1.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/photo-1.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/bcard.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/bcard.jpg"></a></div>
+				
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/books.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/books.jpg"></a></div>
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/repair.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/repair.jpg"></a></div>	
+				<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="images/logo-3.jpg" data-lightbox="photos"><img style="object-fit: cover;
+	border-radius: 5px;" class="img-fluid" src="images/logo-3.jpg"></a></div>
+	</div>
+			
+		<footer>
+		Gallery <span>Created By <a href="mailto:?Subject=ShareButtons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20www.Adenlymathebula@gmail.com">Adenly mathebula</a> | <span class="far fa-copyright"></span> 2020 All rights reserved</span>
+		 
+	</footer>	
+</body>			
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+
+</html>
